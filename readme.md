@@ -5,6 +5,7 @@
 docker-compose up -d
 ```
 
+### copy the container name
 ```
 docker ps
 ```
