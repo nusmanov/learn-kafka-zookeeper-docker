@@ -1,0 +1,14 @@
+version: '3'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+ 
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      # KAFKA_CREATE_TOPICS: "Topic1:1:1"
+      # Topic 1 will have 1 partition and 3 replicas - kafka-docker automatically creates topics in Kafka during creation
