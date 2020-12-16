@@ -15,9 +15,11 @@ docker exec -it kafka-zookeeper-docker_kafka_1 bash
 ```
 
 
-## create a new topic named test-topic
+## create a new topic
+Create a new topic _test-topic_
+```
 kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic test-topic
-
+```
 
 
 ### producer - terminal window 1
