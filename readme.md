@@ -1,4 +1,4 @@
-# deploy Apache Kafka using Docker Compose
+# deploy apache kafka using docker compose
 
 ## build and run
 ```
