@@ -5,18 +5,15 @@
 docker-compose up -d
 ```
 
+## create a new topic
+Inside of the docker container, you can create a new topic _test-topic_ calling the CLI of kafka:
+
 ### copy the container name
 ```
 docker ps
-```
-
-```
 docker exec -it kafka-zookeeper-docker_kafka_1 bash
 ```
 
-
-## create a new topic
-Create a new topic _test-topic_
 ```
 kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic test-topic
 ```
